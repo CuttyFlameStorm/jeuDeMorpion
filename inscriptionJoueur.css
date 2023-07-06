@@ -10,7 +10,7 @@ h1{
 
 /* --------------------------Block Partie------------------------------- */
 #GameStart{
-    display: none;
+   display: none;
 }
 
 .form-fieldPartie{
@@ -65,26 +65,21 @@ form {
   }
   
   /* Styles des champs de saisie */
-  input[type="text"],
-  input[type="password"],
-  input[type="date"] {
+  input[type="text"]{
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    
+    border-radius: 4px; 
   }
-  #langagePrefere {
-    width: 90%;
+
+  #Avatar1, #Avatar2{
+    width: 95%;
     border-color: #f0860c;
-  }
-  #langages{
-    width: 95% !important;
   }
   
   input{
-    width: 95% important;
+    width: 95% ;
   }
   /* Styles des labels */
   label {
@@ -102,13 +97,9 @@ form {
     border-radius: 4px;
   }
   
-  /* Styles des boutons radio */
-  input[type="radio"] {
-    margin-right: 5px;
-  }
-  
+
   /* Styles du bouton de validation */
-  button[type="submit"] {
+  button[type="button"] {
     padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
@@ -117,16 +108,14 @@ form {
     cursor: pointer;
     transition: all 0.2s;
   }
-  button[type="submit"]:hover{
-    background-color: #33ff00;
-    transition: all 0.2s;
-    transform: scale(1.1);
+  button[type="button"]:hover{
+    background-color: #0f7d91;
   }
   
   /* Styles du bouton d'annulation */
   button[type="reset"] {
     padding: 10px 20px;
-    background-color: #b36963;
+    background: linear-gradient(yellowgreen, #4CAF50);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -134,16 +123,13 @@ form {
     transition: all 0.2s;
   }
   button[type="reset"]:hover{
-    background-color: #ff0000;
+    background: linear-gradient(to right, green, darkred);
     transition: all 0.2s;
   }
-  
-  /* Styles du lien de retour */
-  a {
-    color: #0000FF;
-    text-decoration: none;
-    margin-right: 10px;
+  #reset{
+    display: none;
   }
+  
   
   /* Styles du fieldset */
   fieldset {
@@ -159,65 +145,11 @@ form {
     margin-bottom: 10px;
   }
 
-
-
-
-
-/* Styles pour les champs en erreur */
-input:invalid {
-    border-color: #ff0000;
-  }
-  
   /* Styles pour les champs en focus */
   input:focus {
     outline: none;
     box-shadow: 0 0 5px #4CAF50;
   }
-  
-  
-  
-  /* Contraintes pour le champ "Nom" */
-  input[name="nom"]:invalid {
-    border-color: #d3abd8a1;
-  }
-  
-  /* Contraintes pour le champ "Prénom" */
-  input[name="prenom"]:invalid {
-    border-color: #d3abd8a1;
-  }
-  
-  /* Contraintes pour le champ "Date de naissance" */
-  input[name="dateNaissance"]:invalid {
-    border-color: #d3abd8a1;
-  }
-  
-  /* Contraintes pour le champ "Login" */
-  input[name="login"]:invalid {
-    border-color: #d3abd8a1;
-  }
-  
-  /* Contraintes pour le champ "Mot de passe" */
-  input[name="motDePasse"]:invalid {
-    border-color: #d3abd8a1;
-  }
-  
-  /* Contraintes pour le champ "Répéter le mot de passe" */
-  input[name="repeteMotDePasse"]:invalid {
-    border-color: #d3abd8a1;
-  }
-  
-  /* Styles pour les messages d'erreur */
-  .error {
-   
-    color: rgb(20, 212, 196);
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-#erreurNom, #erreurPrenom, #erreurDate, #erreurPasse, #erreurLangage{
-  display: none;
-}
 
 input:hover{
   border-color: rgba(48, 231, 231, 0.644) !important;
@@ -225,19 +157,6 @@ input:hover{
   transition: all 0.1s;
 }
 
-
-/* ------------------Decoration dans l'affichage du choix list----------------------------- */
-#langagePrefere::-webkit-calendar-picker-indicator {
-  display: none;
-}
-
-#langagePrefere {
-  appearance: none;
-  background-image: url('path/to/custom-dropdown-icon.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 20px;
-}
 
 
 
