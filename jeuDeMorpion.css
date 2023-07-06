@@ -1,13 +1,20 @@
 
 
+.encapsule{
+    background-color: black;
+    width: 320px;
+    padding: 0;
+    margin: auto;
+    margin-top: 50px;
+}
 
 #board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    margin-bottom: 20px;
+    margin: 0;
     border-color: blue;
-    padding: 5px;
+    padding: 0;
     background-image: url("images/morpion.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,7 +23,7 @@
   .cell {
     width: 100px;
     height: 100px;
-    background-color: lightgray;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +32,7 @@
   }
   
   button {
+    margin-top: 50px;
     font-size: 24px;
   }
 

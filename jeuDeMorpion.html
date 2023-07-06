@@ -8,8 +8,9 @@
 </head>
 <body>
 
-<h1>Jeu de Morpion</h1>
-  <div id="board">
+<h1 style="text-align: center;">Jeu de Morpion</h1>
+<div class="encapsule">
+    <div id="board">
     <div class="cell" onclick="makeMove(0, 0)"></div>
     <div class="cell" onclick="makeMove(0, 1)"></div>
     <div class="cell" onclick="makeMove(0, 2)"></div>
@@ -20,6 +21,8 @@
     <div class="cell" onclick="makeMove(2, 1)"></div>
     <div class="cell" onclick="makeMove(2, 2)"></div>
   </div>
+</div>
+  
   <button onclick="resetBoard()">Réinitialiser</button>
 
 
