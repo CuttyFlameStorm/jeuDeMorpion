@@ -1,0 +1,22 @@
+
+h1{
+    color: rgb(5, 95, 95);
+}
+
+
+/* --------------------------Block Partie------------------------------- */
+.form-fieldPartie{
+
+padding-bottom: 80px;
+}
+
+.legendaryPartie{
+ color: rgb(5, 95, 95);
+ border-radius: 2px;
+
+}
+
+/* ----------------------------Block Inscription ----------------------- */
+.legendaryInscription{
+    color: rgb(107, 25, 128);
+}

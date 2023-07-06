@@ -15,9 +15,7 @@
     margin: 0;
     border-color: blue;
     padding: 0;
-    background-image: url("images/morpion.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    
   }
   
   .cell {
@@ -39,26 +37,20 @@
   /*-----------------BlackBerry 730----------------------------------------------- */
   @media (min-width: 353px) and (min-height: 745px) {
     #board{
-    background-image : url("images/blackberry.jpg");
-    background-repeat : no-repeat;
-    background-position : center center;
+
     }  
   }
 
   /*-----------------BlackBerry PlayBook----------------------------------------------- */
   @media (min-width:600) and (min-height:1024){
     #board{
-    background-image : url("images/blackberry_playbook.jpg");
-    background-repeat : no-repeat;
-    background-position : center center;
+
     }
   }
 
    /*-----------------Samsung Galaxy Note 3 ----------------------------------------------- */
    @media (min-width:600) and (min-height:1024){
     #board{
-    background-image : url("images/blackberry_playbook.jpg");
-    background-repeat : no-repeat;
-    background-position : center center;
+ 
     }
   }

@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu de Moprion</title>
     <link rel="stylesheet" type="text/css" href="jeuDeMorpion.css">
+    <link rel="stylesheet" type="text/css" href="inscriptionJoueur.css">
 </head>
 <body>
 
-<h1 style="text-align: center;">Jeu de Morpion</h1>
+<h1 style="text-align: center;">PARTIE</h1>
+
+<!-- block où la partie va se jouer -->
+<form>
+    <fieldset class="form-fieldPartie">
+    <legend class="legendaryPartie">Jeu de Morpion</legend>
+
 <div class="encapsule">
     <div id="board">
     <div class="cell" onclick="makeMove(0, 0)"></div>
@@ -22,11 +29,98 @@
     <div class="cell" onclick="makeMove(2, 2)"></div>
   </div>
 </div>
+</fieldset>
+</form>
+<!-- ------------------------------------ -->
+
+<form style="margin-top: 50px; width: 40%;">
+
+    <fieldset class="form-fieldInscription">
+        <legend class="legendaryInscription">Inscription</legend>
+
+        <div class="ChampsInscriptions">
+                <!-- ------Saisie du 1 er joueur------------------------------ -->
+                <div>
+                    <label for="Joueur1">Nom Joueur 1:</label>
+                    <span id="erreurNom" class="error">info 💬: "caractères alphabetique uniquement".</span>
+                    <input placeholder="- à compléter..🖊️ -" type="text" id="Joueur1" name="Joueur1" pattern="[A-Za-z]+" required>
+                </div>
+                <!--Choix de l'Avatar du Joueur 1-->
+                <div>
+                    <label for="Avatar1">Avatar:</label>
+                    <span id="erreurAvatar1" class="error">info 💬: "choisir un Avatar dans la  liste deroulante".</span>
+                    <input placeholder="- Choisissez votre Avatar..📝 -" type="text" list="Avatar1" id="Avatar1" name="Avatar1" required>
+                    <datalist id="Avatar1">
+                      <option value="😡">
+                      <option value="💀">
+                      <option value="🤡">
+                      <option value="👽">
+                      <option value="👻">
+                      <option value="🤖">
+                      <option value="💩">
+                      <option value="😸">
+                      <option value="🙈">
+                      <option value="🧑">
+                      <option value="👨‍🦰">
+                      <option value="👱">
+                      <option value="👩‍🦰">
+                      <option value="👩">
+                      <option value="🙍">
+                      <option value="👮">
+                      <option value="👨‍👩‍👦‍👦">
+                    </datalist>
+                    
+                    </div>
+
+                <!-- -------Saisie du 2 eme Joueur----------------------------- -->
+                <div>
+                    <label for="Joueur2">Nom Joueur 2:</label>
+                    <span id="erreurPrenom" class="error">info 💬: "caractères alphanumériques uniquement".</span>
+                    <input placeholder="- à compléter.. -" type="text" id="Joueur2" name="Joueur2" pattern="[A-Za-z]+" required>
+                </div>
+                <!--Choix de l'Avatar du Joueur 2 -->
+                <div>
+                    <label for="Avatar2">Avatar:</label>
+                    <span id="erreurAvatar2" class="error">info 💬: "choisir un Avatar dans la  liste deroulante".</span>
+                    <input placeholder="- Choisissez votre Avatar..📝 -" type="text" list="Avatar2" id="Avatar2" name="Avatar2" required>
+                    <datalist id="Avatar2">
+                        <option value="😡">
+                        <option value="💀">
+                        <option value="🤡">
+                        <option value="👽">
+                        <option value="👻">
+                        <option value="🤖">
+                        <option value="💩">
+                        <option value="😸">
+                        <option value="🙈">
+                        <option value="🧑">
+                        <option value="👨‍🦰">
+                        <option value="👱">
+                        <option value="👩‍🦰">
+                        <option value="👩">
+                        <option value="🙍">
+                        <option value="👮">
+                        <option value="👨‍👩‍👦‍👦">
+                    </datalist>
+                    
+                    </div>
+
+
+
+
+        </div>
+
+    </fieldset>
+</form>
+
+
+
   
   <button onclick="resetBoard()">Réinitialiser</button>
 
 
   <script src="jeuDeMorpion.js"></script>
+  <script src="inscriptionJoueur.js"></script>
     
 </body>
 </html>
