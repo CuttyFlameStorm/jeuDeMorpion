@@ -32,6 +32,14 @@ padding-bottom: 80px;
 
 .infoSaisie{
     display: none;
+    color: rgb(20, 212, 196);
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#divAvat1, #divJoueur2, #divAvat2 {
+    display: none;
 }
 
 /* ************************************* */
